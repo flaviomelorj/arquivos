@@ -1,0 +1,55 @@
+Vai na pasta do projeto 
+escolha -> (git bash here)
+e dentro da pasta digite /git init/
+PRONTO -- VAI INICIAR O GIT DENTRO DA PASTA
+=======================
+comando -> /git status/ Pra saber quais arquivos não estão incluidos no controle de versão. Pode ter arquivos na pasta criados ou modificados mas não está incluido no controle de versão.
+===========================
+Como incluir o arquivos no controle de versão?
+Simples, digite /git add "meu_arquivo.txt" e assim o arquivo vai fazer parte do controle de versao. Digite /git status/ pra confirmar a inclusão do arquivo.
+==========================
+Tudo bem, ok, mas se tivesse tipo 100 arquivos, eu teria que adcionar manualmente todos? Claro que não por isso tem o comando /git add ./ ai adciona logo tudo de uma vez!!
+===========================
+Legal, gostei, já temos os arquivos adcionados e quero registrar a primeira versão do meu projeto né, como? simple, digite => /git commit -m "VERSAO INICIAL OU COMMIT INICIAL"/ Escolha um nome pra saber que aquele é o primeiro commit né!! AHHHH lembrando que ele vai pedir pra se logar ok? Só seguir as instruções com usuario e senha!! fica assim ->
+------------------------------------
+git config --global user.email "flaviomelorj@hotmail.com"
+-------------------------------------
+git config --global user.name "flaviomelorj"
+------------------------------------------
+Depois de inserir os dados simple, digite => /git commit -m "VERSAO INICIAL OU COMMIT INICIAL"/ novamente e tá lá, já temos uma versão do projeto!!
+===============================
+WOW, mas quero enviar meu projetinho pro github pra todo mundo ver, então? Claro, mas antes vamos crirar o nosso repositório no site do github, é simples, só crirar novo repositorio, de um nome, escolhe privado ou publico e não esquece de adcionar o README, pronto, já temos o local pra receber seu projeto.
+=======================================
+PERFEITO, já temos os arquivos o local e como enviar??? Calma antes vamos informar pra qual endereço vai ser enviado então digite -> /git remote add origin https://github.com/flaviomelorj/minicursogit/
+PRONTO Só digitar /git push/ MAS... Vai da ruim, pois tem que selecionar a BRANCH então vamos lá, digite /git push --set-upstream origin master/ 
+Na proxima é so digitar /git push/
+==========================
+E podemos ver o histórico das versoes? claro digite -> /git reflog/
+
+------
+Mas se por acaso eu queira voltar a uma versão anterior? Como eu faço? Simples, digite -> /git reset --hard (id da branch que deseja retornar)/ tipo caso queira voltar a versão é so digitar ex: /git reset --hard dfacaef/!!
+pra saber o numero da brach só digitar /git reflog/
+===========================
+
+VAMOS COLOCAR AQUI OS CAMNDOS UTEIS E IMPORTANTES, OK?
+========================================================
+Historico
+/git log/
+------------------
+remover um arquivo do repositorio
+/git rm meu_arquivo.txt/
+--------------------------------
+remover um diretório do repositorio
+/git rm -r diretorio/
+---------------------------------
+verificar pra qual repositorio tá sincronizado
+git remote -v
+----------------------------------
+o famoso push // enviar para o github
+/git push -u origin master/
+==========================================================
+
+
+https://github.com/flaviomelorj/minigit2.git
+
+

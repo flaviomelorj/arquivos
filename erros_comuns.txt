@@ -1,0 +1,7 @@
+Para DESCOMMITAR um COMMIT
+
+Primeiro dá um /git reflog/ para pega o ID dos commites
+Com o ID em mãos ai sim você digita /git reset --hard [nº do id]/
+
+=======================================
+
